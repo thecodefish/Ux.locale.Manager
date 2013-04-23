@@ -22,7 +22,8 @@ Ext.application({
         'Ux.locale.override.st.field.DatePicker',
         'Ux.locale.override.st.form.FieldSet',
         'Ux.locale.override.st.picker.Picker',
-        'Ux.locale.override.st.picker.Date'
+        'Ux.locale.override.st.picker.Date',
+        'Ux.locale.override.st.tab.Panel'
     ],
 
     controllers : ['Main'],

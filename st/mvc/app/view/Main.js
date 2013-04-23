@@ -6,7 +6,8 @@ Ext.define('Locale.view.Main', {
         'Ext.Button',
         'Ext.field.Select',
         'Ext.field.DatePicker',
-        'Ext.form.FieldSet'
+        'Ext.form.FieldSet',
+        'Locale.view.TabPanelTest'
     ],
 
     config : {
@@ -29,6 +30,13 @@ Ext.define('Locale.view.Main', {
                         ui      : 'confirm',
                         locales : {
                             text : 'buttons.save'
+                        },
+                        listeners: {
+                            tap: function()
+                            {
+                                var tabPanelTest = Ext.create('Locale.view.TabPanelTest');
+                                Ext.Viewport.setActiveItem(tabPanelTest);
+                            }
                         }
                     },
                     {
